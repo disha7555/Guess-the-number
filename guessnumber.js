@@ -23,15 +23,20 @@ function f()
 		{
 			alert("your guess is lesser than random number");
 		}
-		else
+		else if(randomnumber<guessednumber)
 		{
 			alert("your guess is greater than random number");
 		}
-	}while(randomnumber!=guessednumber && numberofguess<100);//loop will run until number is guessed is right and no of attempts taken is lessthan 100.
+		else{
+			
+			break;
+		}
+	}while(randomnumber!=guessednumber && numberofguess<100 && guessednumber!=null);//loop will run until number is guessed is right and no of attempts taken is lessthan 100.
 	if(randomnumber==guessednumber)
 	{
 		div2.innerHTML="you have guessed correct number"+randomnumber+"in"+numberofguess+"attempts"+"Your score is"+score+"out of 100";
 	}
+	
 	else{
 		div2.innerHTML="Original number was "+randomnumber+". Better luck next time";
 	}
