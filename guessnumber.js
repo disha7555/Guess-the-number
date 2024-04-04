@@ -17,7 +17,7 @@ function f()
 		if(randomnumber==guessednumber)
 		{
 			score=100-numberofguess;
-			alert("your guess is corect");
+			alert("your guess is correct");
 		}
 		else if(randomnumber>guessednumber)
 		{
